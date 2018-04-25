@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>学习日志</title>
+  
+  <subtitle>ycxj&#39;s blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-03-22T05:27:42.559Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>ycxiaojun</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>仿天猫主页</title>
+    <link href="http://yoursite.com/2018/03/04/%E4%BB%BF%E5%A4%A9%E7%8C%AB%E4%B8%BB%E9%A1%B5/"/>
+    <id>http://yoursite.com/2018/03/04/仿天猫主页/</id>
+    <published>2018-03-04T04:30:43.000Z</published>
+    <updated>2018-03-22T05:27:42.559Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/tmall-index.png" alt="image"><br><a href="https://ycxj.github.io/demo.github.io/demo/tmall/index.html" target="_blank" rel="noopener">查看地址</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/tmall-index.png&quot; alt=&quot;image&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://ycxj.github.io/demo.github.io/demo/tmall/index.html&quot; target=&quot;_blank&quot; 
+      
+    
+    </summary>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="jquery" scheme="http://yoursite.com/tags/jquery/"/>
+    
+      <category term="bootstrap" scheme="http://yoursite.com/tags/bootstrap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用github page与hexo搭建个人博客</title>
+    <link href="http://yoursite.com/2018/03/03/%E4%BD%BF%E7%94%A8github%20page%E4%B8%8Ehexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/03/03/使用github page与hexo搭建个人博客/</id>
+    <published>2018-03-03T13:15:00.000Z</published>
+    <updated>2018-03-13T04:15:16.826Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>　　今天写一篇关于用github page和hexo来搭建个人博客的文章，分享一下我的个人博客搭建之路。我为什么要搭建一个个人博客呢？主要还是为了找工作，因为搭建一个个人的博客可以把自己的一些作品放到上面，同时也可以跟其他人交流一下，更好地提升个人的技术水平。<br>　　这篇文章是博客搭建的基础篇，一些小白或者跟我一样的菜鸟可以参考一下。因为我本人也还是菜鸟一个，文章中可能会存在一些错误跟问题，大家可以跟我交流一下（欢迎大佬们来指点江山）。</p><p>　　本文主要的内容是下面几部分：</p><ol><li>安装Node.js</li><li>安装Git</li><li>Github账户注册和新建项目</li><li>安装Hexo</li><li>将Hexo与Github page联系起来</li></ol><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><ul><li>下载Node.js安装文件。<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">Node.js中文网</a></li></ul><p><img src="/images/nodejs.png" alt="image"></p><ul><li>根据自己的电脑系统选择对应的安装包</li></ul><p><img src="/images/nodejs2.jpg" alt="image"></p><p>　保持默认设置即可，一路Next，安装很快就结束了。 然后我们检查一下是不是要求的组件都安装好了，同时按下Win和R，打开运行窗口：</p><p><img src="/images/cmd.jpg" alt="image"></p><ul><li>然后在界面中输入：</li></ul><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v  </span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p><img src="/images/cmd2.png" alt="image"></p><p>　如果结果如下图所示，则说明安装正确，可以进行下一步了，如果不正确，则需要回头检查自己的安装过程。</p><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><ul><li>下载Git安装文件。<a href="hhttps://git-scm.com/downloads" target="_blank" rel="noopener">Git官网下载地址</a></li></ul><p><img src="/images/git.png" alt="image"></p><ul><li>根据自己的电脑系统选择对应的安装</li></ul><p>　　安装步骤跟node.js差不多，一路点next下来就好，安装好了之后，在桌面右键会有Git GUI here和Git Bash here两个选项，点击Git Bash here，然后输入git version,如果结果如下图所示，则说明安装正确，可以进行下一步了，如果不正确，则需要回头检查自己的安装过程。</p><p><img src="/images/git2.jpg" alt="image"></p><p>关于Git的详细安装以及使用教程可参考：<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">廖雪峰Git教程</a></p><h3 id="Github新建仓库"><a href="#Github新建仓库" class="headerlink" title="Github新建仓库"></a>Github新建仓库</h3><ul><li>登陆github后，新建一个代码仓库（New repository）。</li></ul><p><img src="/images/github.png" alt="image"></p><p>　　然后进入到代码库创建页面，<strong>这里一定一定要注意在Repository name下填写yourname.github.io，yourname就是你个人的github的名称，不这样写后面可能会出问题，要尽可能避免出现，</strong>Description (optional)下填写一些简单的描述（不写也没有关系），填写完名称后，点击下面的create repository即可，如图所示：</p><p><img src="/images/repo.png" alt="image"></p><p>　　后面会看到这个界面：</p><p><img src="/images/repocode.jpg" alt="image"></p><p>　　点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：</p><p><img src="/images/reposetting.jpg" alt="image"></p><p><img src="/images/repogene.jpg" alt="image"></p><p>　　点击Launch automatic page generator，Github将会自动替你创建出一个github-pages的页面, 如果你的配置没有问题，那么大约15分钟之后，yourname.github.io这个网址就可以正常访问了。</p><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><p>　　在自己认为合适的地方创建一个文件夹，这里我以E：/hexo 为例子讲解，首先在E盘目录下创建Hexo文件夹，并在命令行的窗口进入到该目录：</p><p><img src="/images/hexo1.jpg" alt="image"></p><p>　　在命令行中输入：</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>　　然后你将会看到:</p><p><img src="/images/hexo2.jpg" alt="image"></p><p>　　可能你会看到一个WARN，但是不用担心，这不会影响你的正常使用。 然后输入<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo --save</span><br></pre></td></tr></table></figure></p><p>　　然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。 在命令行中输入：</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><p><img src="/images/hexo3.jpg" alt="image"></p><h4 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h4><p>　　输入hexo init，初始化hexo,看到后面的“Start blogging with Hexo！”就是初始化成功了（这个操作时间会比较就，等待一下就好）。<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></p><p><img src="/images/init1.png" alt="image"><br><img src="/images/init2.png" alt="image"></p><p>　　然后输入npm install，安装所需要的组件。</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><p><img src="/images/npm.png" alt="image"></p><h4 id="首次体验hexo"><a href="#首次体验hexo" class="headerlink" title="首次体验hexo"></a>首次体验hexo</h4><p>　　继续在命令行中输入hexo g<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p><p><img src="/images/hexog.jpg" alt="image"></p><p>　　然后再输入 hexo s启动服务器：</p><p><img src="/images/hexos.png" alt="image"></p><p>　　输入上图的网址就可以访问了，加入一直都没有跳转，有可能是端口被占用了，需要修改端口，此时我们ctrl+c停止服务器，接着输入“hexo server -p 端口号”来改变端口号</p><p><img src="/images/hexop.png" alt="image"></p><p>　　如果能够看到下图就说明成功了。</p><p><img src="/images/hexo.jpg" alt="image"></p><h3 id="将Hexo与Github-page联系起来"><a href="#将Hexo与Github-page联系起来" class="headerlink" title="将Hexo与Github page联系起来"></a>将Hexo与Github page联系起来</h3><h4 id="配置Git个人信息"><a href="#配置Git个人信息" class="headerlink" title="配置Git个人信息"></a>配置Git个人信息</h4><p>　　进入blog文件夹，右键进入Git Bash,然后分别输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure></p><h4 id="创建SSH密钥"><a href="#创建SSH密钥" class="headerlink" title="创建SSH密钥"></a>创建SSH密钥</h4><p>　　在gitbash中输入下面的内容，需要按多次回车键，生成ssh密钥，最后得到了两个文件：id_rsa和id_rsa.pub（默认存储路径是：C:\Users\Administrator\ .ssh）：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure><p>　　登陆个人的github账号，进入settings，再进入 SSH and GPG keys，点击右上角的New SSH Key,然后进入.ssh文件夹用记事本打开id_rsa.pub文件，复制里面的内容放到Key里面，title可以随便填：</p><p><img src="/images/githubsetting.png" alt="image"><br><img src="/images/githubssh.png" alt="image"><br><img src="/images/newssh.png" alt="image"></p><p>　　输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p><h4 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h4><p>在你blog的根目录下找到_config.yml文件，按照这个格式修改repo值：</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:yourname/yourname.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure><p>　　比如我的仓库的地址,所以配置如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git@github.com:ycxiaojun/ycxiaojun.github.io.git</span><br></pre></td></tr></table></figure></p><p><img src="/images/ymlrepo.png" alt="image"></p><h4 id="新建一篇博客"><a href="#新建一篇博客" class="headerlink" title="新建一篇博客"></a>新建一篇博客</h4><p>　　在cmd执行命令一下命令,这个博客名随便取：<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post “博客名”</span><br></pre></td></tr></table></figure></p><p>　　这时候在文件夹_posts目录下将会看到已经创建的文件，用MarDown编辑器打开就可以编辑文章了。</p><p>　　在生成以及部署文章之前，需要安装一个扩展，在cmd中输入：<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p><p>　　文章编辑好之后，运行生成、部署命令：<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g   // 生成以及部署了</span><br></pre></td></tr></table></figure></p><p>　　部署成功后访问你的地址：http://用户名.github.io。那么将看到生成的文章。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;　　今天写一篇关于用github page和hexo来搭建个人博客的文章，分享一下我的个人博客搭建之路。我为什么要搭建一个个人博客呢？主要还
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>终于弄好了我的博客</title>
+    <link href="http://yoursite.com/2018/02/25/%E7%BB%88%E4%BA%8E%E5%BC%84%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/02/25/终于弄好了我的博客/</id>
+    <published>2018-02-25T12:37:00.000Z</published>
+    <updated>2018-03-12T05:31:22.670Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/timg.jpg" alt="image"></p><p>　　今天是2018年2月25号（农历大年初十），年前开始捣鼓怎样做一个个人博客，中间过了一个年，今天终于把个人博客的基本框架都搭建好了，剩下的一些细枝末节的东西后面再弄。这篇文章算是我的第一篇博客文章啊，有点小激动！！！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/timg.jpg&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;　　今天是2018年2月25号（农历大年初十），年前开始捣鼓怎样做一个个人博客，中间过了一个年，今天终于把个人博客的基本框架都搭建好了，剩下的一些细枝末节的东西后面再弄。这篇文章
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+</feed>
