@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/magnifier.png">
 <meta property="og:image" content="http://yoursite.com/images/move.jpg">
-<meta property="og:updated_time" content="2018-04-28T08:50:58.838Z">
+<meta property="og:updated_time" content="2018-05-16T08:26:31.064Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="放大镜特效">
 <meta name="twitter:description" content="个人写博客是为了记录前端学习的过程以及收获，同时也为了记录学习过程中碰到的各种各样的坑，好敦促自己要努力学习，keep moving！   html 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656">
@@ -396,7 +396,9 @@
 <pre><code>6.计算大图的移动的范围
 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var bigRangeLeft = bigImg.offsetWidth-bigBox.offsetWidth,</span><br><span class="line">   	bigRangeTop = bigImg.offsetHeight-bigBox.offsetHeight;</span><br></pre></td></tr></table></figure>
 <pre><code>7.//计算大图的位置及赋值
-</code></pre><p>var bigLeft = bigRangeLeft<em>w,<br>    bigTop = bigRangeTop</em>h;<br>    //赋值<br>    bigBox.scrollTop = bigTop;<br>    bigBox.scrollLeft = bigLeft;<br><code>`</code><br>　　大功告成，放大镜的效果就写出来了，由于本人能力有限，写的有什么不对的地方以及不好的地方，多多包涵！最后附上一个完整的demo文件。　　<a href="magnifier.html">下载</a></p>
+</code></pre><p>var bigLeft = bigRangeLeft<em>w,<br>    bigTop = bigRangeTop</em>h;<br>    //赋值<br>    bigBox.scrollTop = bigTop;<br>    bigBox.scrollLeft = bigLeft;<br><code>`</code><br>　　大功告成，放大镜的效果就写出来了，由于本人能力有限，写的有什么不对的地方以及不好的地方，多多包涵！</p>
+<blockquote>
+<h3 id="👉源码地址：Github在这里"><a href="#👉源码地址：Github在这里" class="headerlink" title="👉源码地址：Github在这里"></a>👉源码地址：<a href="https://github.com/ycxiaojun/magnifier" target="_blank" rel="noopener">Github在这里</a></h3></blockquote>
 
       
     </div>
@@ -493,8 +495,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -524,7 +535,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -535,7 +546,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -565,6 +576,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#👉源码地址：Github在这里"><span class="nav-number">1.</span> <span class="nav-text">👉源码地址：Github在这里</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
