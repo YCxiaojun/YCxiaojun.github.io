@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/magnifier.png">
 <meta property="og:image" content="http://yoursite.com/images/move.jpg">
-<meta property="og:updated_time" content="2018-05-16T08:59:50.211Z">
+<meta property="og:updated_time" content="2018-05-16T23:59:43.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="放大镜特效">
 <meta name="twitter:description" content="个人写博客是为了记录前端学习的过程以及收获，同时也为了记录学习过程中碰到的各种各样的坑，好敦促自己要努力学习，keep moving！   👉预览地址：传送门  html 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596">
@@ -398,7 +398,8 @@
 <pre><code>6.计算大图的移动的范围
 </code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var bigRangeLeft = bigImg.offsetWidth-bigBox.offsetWidth,</span><br><span class="line">   	bigRangeTop = bigImg.offsetHeight-bigBox.offsetHeight;</span><br></pre></td></tr></table></figure>
 <pre><code>7.//计算大图的位置及赋值
-</code></pre><p>var bigLeft = bigRangeLeft<em>w,<br>    bigTop = bigRangeTop</em>h;<br>    //赋值<br>    bigBox.scrollTop = bigTop;<br>    bigBox.scrollLeft = bigLeft;<br><code>`</code><br>　　大功告成，放大镜的效果就写出来了，由于本人能力有限，写的有什么不对的地方以及不好的地方，多多包涵！</p>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var bigLeft = bigRangeLeft*w,</span><br><span class="line">    bigTop = bigRangeTop*h;</span><br><span class="line">    //赋值</span><br><span class="line">    bigBox.scrollTop = bigTop;</span><br><span class="line">    bigBox.scrollLeft = bigLeft;</span><br></pre></td></tr></table></figure>
+<p>　　大功告成，放大镜的效果就写出来了，由于本人能力有限，写的有什么不对的地方以及不好的地方，多多包涵！</p>
 <blockquote>
 <h3 id="👉源码地址：Github在这里"><a href="#👉源码地址：Github在这里" class="headerlink" title="👉源码地址：Github在这里"></a>👉源码地址：<a href="https://github.com/ycxiaojun/magnifier" target="_blank" rel="noopener">Github在这里</a></h3></blockquote>
 
