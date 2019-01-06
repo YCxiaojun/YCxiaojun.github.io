@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2019-01-06T04:22:00.426Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/03/04/%E4%BB%BF%E5%A4%A9%E7%8C%AB%E5%95%86%E5%9F%8E/</loc>
+    
+    <lastmod>2018-12-24T14:09:28.375Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/03/04/Vue2.0%E5%85%A8%E5%AE%B6%E6%A1%B6%E6%A8%A1%E4%BB%BF%E4%BA%AC%E4%B8%9C%E5%95%86%E5%9F%8Eapp/</loc>
     
-    <lastmod>2018-05-17T03:44:35.679Z</lastmod>
+    <lastmod>2018-12-24T14:09:12.870Z</lastmod>
     
   </url>
   
@@ -19,20 +33,6 @@
     <loc>http://yoursite.com/2018/03/04/%E6%94%BE%E5%A4%A7%E9%95%9C%E7%89%B9%E6%95%88/</loc>
     
     <lastmod>2018-05-16T23:59:43.838Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/03/04/%E4%BB%BF%E5%A4%A9%E7%8C%AB%E5%95%86%E5%9F%8E/</loc>
-    
-    <lastmod>2018-04-28T06:13:19.238Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2018-04-28T02:32:16.361Z</lastmod>
     
   </url>
   
